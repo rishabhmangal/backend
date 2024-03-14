@@ -38,7 +38,7 @@ app.get("/loaduser", (req, res) => {
 });
 
 const startServer = async () => {
-  await mongoose.connect("mongodb://localhost:27017/userdb");
+  await mongoose.connect("mongodb+srv://amar:amar123@cluster0.rle5i.mongodb.net/mmcdb?retryWrites=true&w=majority&appName=Cluster0");
   app.listen(4000, () => {
     console.log("server is ready");
   });
