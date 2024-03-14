@@ -13,9 +13,9 @@ app.use(bp.json());
 userdata = [];
 
 app.post("/adduser", (req, res) => {
-  // var data = req.body;
+   var data = req.body;
   // console.log(data);
-  // userdata.push(data);
+   userdata.push(data);
   // res.send(data);
   const users = new empcrud({
     ...req.body,
